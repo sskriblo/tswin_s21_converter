@@ -12,7 +12,7 @@
 
 ToDo:
     - "year" еще не реализован;
-    - 
+    - требуется логирование ошибок и несовпадений, например, при поиске карточки;
 
 Release History:
 R0.1 2013-08-07 Initial Release. Works with Russian, INDEX chatched well
@@ -82,7 +82,6 @@ if __name__ == '__main__':
             two_words = name.split(" ")
             if len(two_words) > 2:
                 pass # ok
-
                 full_name = two_words[2].strip() + " " + two_words[1].strip()  
                 # Ищем имя файла, где бы было имя и фамилия
                 res = search_s21(two_words)

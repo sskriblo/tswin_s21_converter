@@ -289,6 +289,7 @@ def extract_pdf(filename,f):
                 for i in range(len(d)):
                     f.write(d[i] + "\t")
         # remove temp files for this page
+#        raw_input("LOOK at TEMP Directory !!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
         cmd = "rm %s"  %(PATH_TEMP + '/*.tif')
         subprocess.call([cmd], shell=True)        
         cmd = "rm %s"  %(PATH_TEMP + '/*.txt')
